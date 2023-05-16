@@ -1,23 +1,30 @@
 Python Project
-Command Line Checkbook Application
-You will create a command line checkbook application that allows users to track their financeswith a command line interface.
-Project Requirements
-Build a
-.py
-file that will be run from the command line.
-When run, the application should welcome the user, and prompt them for an action totake:
-view current balance
-add a debit (withdrawal)
-add a credit (deposit)
-exit
-The application should notify the user if the input is invalid and prompt for anotherchoice.
-The application should persist between times that it is run.
-Example, if you run the application, add some credits, exit the application and run itagain, you should still see the balance that you previously created. In order to do this,your application will need to store its data in a text file. Consider creating a file whereeach line in the file represents a single transaction.
-Utilize functions to call the balance, debit, credit, and exit
-Example Ouput
-Here is an example of what using the program might look like:
-$ python checkbook.py ~~~ Welcome to your terminal checkbook! ~~~
-5/12/23, 5:07 PM Python Checkbook Project - Codeup Data Science
-https://ds.codeup.com/python/project/ 2/3
-Bonus Features
-What would you like to do? 1) view current balance 2) record a debit (withdraw) 3) record a credit (deposit) 4) exit Your choice? 5 Invalid choice: 5 Your choice? 1 Your current balance is $100.00. What would you like to do? 1) view current balance 2) record a debit (withdraw) 3) record a credit (deposit) 4) exit Your choice? 2 How much is the debit? $50 What would you like to do? 1) view current balance 2) record a debit (withdraw) 3) record a credit (deposit) 4) exit Your choice? 1 Your current balance is $50.00. What would you like to do? 1) view current balance 2) record a debit (withdraw) 3) record a credit (deposit) 4) exit Your choice? 4 Thanks, have a great day!
+Bank of Carter Checkbook Application Terms of Use Agreement
+
+Welcome this application allows users (account holders) to track their finances using a command-line interface. By running the checkbook.py you are agreeing to terms of use.
+
+To run checkbook.py, open your terminal and input 'python checkbook.py' in the command line to run.
+When opened, the application will welcome and prompt the user to select. Follow instructions. Type in one of the four options as written. (ex: for balance input: 1). 
+
+For credit and debt options, input amounts in USD (example: 50, 100). Like all ATM locations, we do not accept alphabet or symbols for credit or debit inputs and we do not disburse change. Failure to follow instructions will result in immediate removal from the bank. Once removed, you can restart the checkbook to try again. 
+
+The main menu prompt allows the following options
+View current balance: 1
+add a debit (withdrawal): 2
+add a credit (deposit)/: 3
+exit: 4
+
+When exiting user will be notified if the input is invalid and prompted to try again.
+Once exited, your balance will be recorded and available for your next visit or transaction 
+Failure to follow terms will result in removal from bank and account closure.  
+ 
+
+Bonus Features of the Bank of Carter:
+We are respectful and try to prompt the user as much as possible:
+examples:  'Please select an option from the menu 
+1) display the current balance 
+2) record and display the debit (withdraw) balance after the transaction
+3) record a credit (deposit) balance after the transaction
+4) Confirming exiting choice?
+5) Display invalid input: 'That is an invalid input. Please try again'
+6) Welcome or Salutation upon entering/exiting
